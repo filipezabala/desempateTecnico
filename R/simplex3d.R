@@ -1,20 +1,10 @@
-##################
-### SIMPLEX 3D ###
-##################
-
-# Limpando a memória
-rm(list=ls(all=TRUE))
-
-# Pacotes
-packs <- c('ellipse','rgl')
-new.packages <- packs[!(packs %in% installed.packages()[,"Package"])]
-if(length(new.packages)) install.packages(packs, dep=TRUE)
-library(ellipse)
-library(rgl)
-
-# Função simplex3d
-simplex3d <- function(pa,pb,pc,n,alpha)
-    {
+#' Generates a 2D simplex.
+#' @param \code{pa},\code{pb} and \code{pc}. The proportions of votes of candidates A, B and C.
+#' @param \code{n} Sample size.
+#' @param \code{alpha} Significance level. Default: \code{alpha=0.05}.
+#' @import ellipse rgl
+#' @examples simplex3d()
+simplex3d <- function(pa,pb,pc,n,alpha=0.05){
     
   # Criando elementos para a geração do simplex
     z <- qnorm(1-alpha/2)
@@ -153,5 +143,4 @@ simplex3d <- function(pa,pb,pc,n,alpha)
     plot3d(mpc, type="l", col="green3", add=T)
     
     plot3d(eabc, type="l", col="blue", add=T)
-
 } 
