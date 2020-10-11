@@ -2,19 +2,19 @@
 % Please edit documentation in R/simplex3d.R
 \name{simplex3d}
 \alias{simplex3d}
-\title{Generates a 2D simplex.}
+\title{Generates a 3D simplex.}
 \usage{
 simplex3d(pa, pb, pc, n, alpha = 0.05)
 }
 \arguments{
-\item{\code{pa}, \code{pb}}{and \code{pc}. The proportions of votes of candidates A, B and C.}
+\item{\code{pa}, \code{pb}, }{\code{pc}. The proportions of votes of candidates A, B and C.}
 
 \item{\code{n}}{Sample size.}
 
 \item{\code{alpha}}{Significance level. Default: \code{alpha=0.05}.}
 }
 \description{
-Generates a 2D simplex.
+Generates a 3D simplex.
 }
 \examples{
 simplex3d(.4, .3, .3, 1000)

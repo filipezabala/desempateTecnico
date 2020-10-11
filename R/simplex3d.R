@@ -1,5 +1,5 @@
-#' Generates a 2D simplex.
-#' @param \code{pa},\code{pb} and \code{pc}. The proportions of votes of candidates A, B and C.
+#' Generates a 3D simplex.
+#' @param \code{pa},\code{pb}, \code{pc}. The proportions of votes of candidates A, B and C.
 #' @param \code{n} Sample size.
 #' @param \code{alpha} Significance level. Default: \code{alpha=0.05}.
 #' @import ellipse rgl
