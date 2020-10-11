@@ -10,9 +10,11 @@ new.packages <- packs[!(packs %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(packs, dep=TRUE)
 update.packages(checkBuilt = TRUE, ask = FALSE)
 devtools::install_github('filipezabala/desempateTecnico', force = T)
+library(desempateTecnico)
 ```
 
 ## Exemplos
+### `bayes`
 ```r
 bayes( c(.4,.3,.3), 1000)
 #' bayes( c(.3,.25,.2,.1,.05), 100)
@@ -25,3 +27,20 @@ bayes( c(.4,.3,.3), 1000)
 #' bayes( c(.3391808234, .3333247966, .3274943799), 10^5 )
 #' bayes( c(.3333333335, .3333333333, .3333333331), 10^20 )
 ```
+
+### `simplex2d`
+```r
+simplex2d()
+```
+![](simplex2d.png)
+
+### `simplex3d`
+```r
+simplex3d(.4, .3, .3, 1000)
+```
+![](simplex3d(.4, .3, .3, 1000).png)
+```r
+simplex3d(.5144202347, .3246860305, .1608937348, 100)
+```
+![](simplex3d(.5144202347, .3246860305, .1608937348, 100).png)
+
