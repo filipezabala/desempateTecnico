@@ -15,6 +15,7 @@
 #' bayes(c(.3518464606, .3332479566, .3149055828), 10^4)
 #' bayes(c(.3391808234, .3333247966, .3274943799), 10^5)
 #' bayes(c(.3333333335, .3333333333, .3333333331), 10^20)
+#' @export
 bayes <- function(p=vector(), n, M=10^4){ 
 
   priori <- 1 # Definindo os parâmetros da priori (todos iguais)

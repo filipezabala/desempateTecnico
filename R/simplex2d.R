@@ -1,6 +1,7 @@
 #' Generates a 2D simplex.
 #' @import klaR
 #' @examples simplex2d()
+#' @export
 simplex2d <- function(){
   # Gráfico para compreender mehor onde ocorrem os diversos empates
   rpa <- matrix(c(1,0,0, 0,.5,.5), nrow=2, ncol=3, byrow=T)

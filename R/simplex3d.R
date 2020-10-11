@@ -13,6 +13,7 @@
 #' simplex3d(.3518464606, .3332479566, .3149055828, 10^4)
 #' simplex3d(.3391808234, .3333247966, .3274943799, 10^5)
 #' simplex3d(.3333333335, .3333333333, .3333333331, 10^20)
+#' @export
 simplex3d <- function(pa,pb,pc,n,alpha=0.05){
     
   # Criando elementos para a geração do simplex
