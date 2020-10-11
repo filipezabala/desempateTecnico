@@ -28,5 +28,6 @@ library(desempateTecnico)
 ?bayes
 ?simplex2d
 ?simplex3d
+?ci_prop
 citation('desempateTecnico')
 packageDescription('desempateTecnico')
