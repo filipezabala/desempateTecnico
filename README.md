@@ -17,15 +17,39 @@ library(desempateTecnico)
 ### `bayes`
 ```r
 bayes(c(.4,.3,.3), 1000)
+```
+![](img/bayes1000.png)
+```r
 bayes(c(.3,.25,.2,.1,.05), 100)
+```
+![](img/bayes100.png)
+```r
 bayes(rep(1/5,5), 500)
+```
+![](img/bayes500.png)
 
-# A seguir estão cenários com empate técnico tríplice segundo os institutos de pesquisa.
+A seguir estão cenários com empate técnico tríplice segundo os institutos de pesquisa.
+```r
 bayes(c(.5813972562, .3158114522, .1027912917), 50)
+```
+![](img/empate50.png)
+```r
 bayes(c(.5144202347, .3246860305, .1608937348), 100)
+```
+![](img/empate100.png)
+```r
 bayes(c(.4160925601, .3316216347, .2522858052), 500)
+```
+![](img/empate500.png)
+```r
 bayes(c(.3919345050, .3324785813, .2755869137), 10^3)
+```
+![](img/empate1000.png)
+```r
 bayes(c(.3518464606, .3332479566, .3149055828), 10^4)
+```
+![](img/empate10000.png)
+```r
 bayes(c(.3391808234, .3333247966, .3274943799), 10^5)
 bayes(c(.3333333335, .3333333333, .3333333331), 10^20)
 ```
