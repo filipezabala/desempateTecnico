@@ -5,7 +5,7 @@ Arquivos e funções utilizadas na dissertação de Filipe Zabala (2009) - Desem
 ## Instalação
 ```r
 # Instalando pacotes
-packs <- c('devtools','VGAM','klaR','ellipse')
+packs <- c('devtools','VGAM','klaR','ellipse','rgl')
 new.packages <- packs[!(packs %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(packs, dep=TRUE)
 update.packages(checkBuilt = TRUE, ask = FALSE)
