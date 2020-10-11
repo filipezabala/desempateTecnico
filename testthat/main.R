@@ -21,7 +21,7 @@ devtools::load_all()
 
 # installing
 update.packages(ask=F)
-devtools::install_github('filipezabala/voice', force = T)
+devtools::install_github('filipezabala/desempateTecnico', force = T)
 
 # attaching
 library(voice)

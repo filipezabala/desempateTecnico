@@ -3,7 +3,16 @@
 #' @param \code{n} Sample size.
 #' @param \code{alpha} Significance level. Default: \code{alpha=0.05}.
 #' @import ellipse rgl
-#' @examples simplex3d()
+#' @examples simplex3d(.4, .3, .3, 1000)
+#' simplex3d(.3,.25,.2,.1,.05, 100)
+#' simplex3d(rep(1/5,5), 500)
+#' simplex3d(.5813972562, .3158114522, .1027912917, 50)
+#' simplex3d(.5144202347, .3246860305, .1608937348, 100)
+#' simplex3d(.4160925601, .3316216347, .2522858052, 500)
+#' simplex3d(.3919345050, .3324785813, .2755869137, 10^3)
+#' simplex3d(.3518464606, .3332479566, .3149055828, 10^4)
+#' simplex3d(.3391808234, .3333247966, .3274943799, 10^5)
+#' simplex3d(.3333333335, .3333333333, .3333333331, 10^20)
 simplex3d <- function(pa,pb,pc,n,alpha=0.05){
     
   # Criando elementos para a geração do simplex
