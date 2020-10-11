@@ -24,9 +24,9 @@ update.packages(ask=F)
 devtools::install_github('filipezabala/desempateTecnico', force = T)
 
 # attaching
-library(voice)
-?conv_df
-?conv_mc
-?extract_features
-find.package('voice')
-packageDescription('voice')
+library(desempateTecnico)
+?bayes
+?simplex2d
+?simplex3d
+citation('desempateTecnico')
+packageDescription('desempateTecnico')

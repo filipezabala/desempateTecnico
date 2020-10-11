@@ -29,9 +29,9 @@ simplex3d <- function(pa,pb,pc,n,alpha=0.05){
     Sac <- matrix( c(vpa, covpapc, covpapc, vpc), nrow=2, ncol=2)
     Sbc <- matrix( c(vpb, covpbpc, covpbpc, vpc), nrow=2, ncol=2)
     
-    eab <- ellipse(Sab, centre=c(pa,pb), level=1-alpha)
-    eac <- ellipse(Sac, centre=c(pa,pc), level=1-alpha)
-    ebc <- ellipse(Sbc, centre=c(pb,pc), level=1-alpha)
+    eab <- ellipse::ellipse(Sab, centre=c(pa,pb), level=1-alpha)
+    eac <- ellipse::ellipse(Sac, centre=c(pa,pc), level=1-alpha)
+    ebc <- ellipse::ellipse(Sbc, centre=c(pb,pc), level=1-alpha)
     
     colnames(eab) <- c("pa", "pb")
     colnames(eac) <- c("pa", "pc")
@@ -140,16 +140,16 @@ simplex3d <- function(pa,pb,pc,n,alpha=0.05){
     ### Plotando os gráficos 3D ###
     ###############################
     
-    plot3d(simplex, type="p", xlim=c(0,1), ylim=c(0,1), zlim=c(0,1), top=F)
-    plot3d(l1, type="l", col="black", add=T)
-    plot3d(l2, type="l", col="black", add=T)
-    plot3d(l3, type="l", col="black", add=T)
-    plot3d(rpa, type="l", col="red", add=T)
-    plot3d(rpb, type="l", col="red", add=T)
-    plot3d(rpc, type="l", col="red", add=T)
-    plot3d(mpa, type="l", col="green3", add=T)
-    plot3d(mpb, type="l", col="green3", add=T)
-    plot3d(mpc, type="l", col="green3", add=T)
+    rgl::plot3d(simplex, type="p", xlim=c(0,1), ylim=c(0,1), zlim=c(0,1), top=F)
+    rgl::plot3d(l1, type="l", col="black", add=T)
+    rgl::plot3d(l2, type="l", col="black", add=T)
+    rgl::plot3d(l3, type="l", col="black", add=T)
+    rgl::plot3d(rpa, type="l", col="red", add=T)
+    rgl::plot3d(rpb, type="l", col="red", add=T)
+    rgl::plot3d(rpc, type="l", col="red", add=T)
+    rgl::plot3d(mpa, type="l", col="green3", add=T)
+    rgl::plot3d(mpb, type="l", col="green3", add=T)
+    rgl::plot3d(mpc, type="l", col="green3", add=T)
     
-    plot3d(eabc, type="l", col="blue", add=T)
+    rgl::plot3d(eabc, type="l", col="blue", add=T)
 } 
