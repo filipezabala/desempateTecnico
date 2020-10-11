@@ -19,6 +19,8 @@ library(desempateTecnico)
 bayes(c(.4,.3,.3), 1000)
 bayes(c(.3,.25,.2,.1,.05), 100)
 bayes(rep(1/5,5), 500)
+
+# A seguir estão cenários com empate técnico tríplice segundo os institutos de pesquisa.
 bayes(c(.5813972562, .3158114522, .1027912917), 50)
 bayes(c(.5144202347, .3246860305, .1608937348), 100)
 bayes(c(.4160925601, .3316216347, .2522858052), 500)
