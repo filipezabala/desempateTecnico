@@ -14,6 +14,7 @@ library(desempateTecnico)
 ```
 
 ## Exemplos
+O exemplos a seguir dependem de simulações, portanto devem apresentar resultados ligeiramente diferentes entre as rodadas.
 ### `bayes`
 ```r
 bayes(c(.4,.3,.3), 1000)
