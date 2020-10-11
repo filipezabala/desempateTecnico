@@ -38,9 +38,9 @@ simplex2d()
 ```r
 simplex3d(.4, .3, .3, 1000)
 ```
-![](img/simplex3d(.4, .3, .3, 1000).png)
+![](img/simplex3d1000.png)
 ```r
 simplex3d(.5144202347, .3246860305, .1608937348, 100)
 ```
-![](img/simplex3d(.5144202347, .3246860305, .1608937348, 100).png)
+![](img/simplex3d100.png)
 
