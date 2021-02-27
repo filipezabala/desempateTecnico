@@ -10,6 +10,8 @@ new.packages <- packs[!(packs %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(packs, dep=TRUE)
 update.packages(checkBuilt = TRUE, ask = FALSE)
 devtools::install_github('filipezabala/desempateTecnico', force = T)
+
+# Chamando biblioteca
 library(desempateTecnico)
 ```
 
