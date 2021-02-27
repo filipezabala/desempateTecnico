@@ -16,7 +16,7 @@ simplex2d <- function(){
   l2 <- matrix(c(0,1,0, 0,0,1), nrow=2, ncol=3, byrow=T)
   l3 <- matrix(c(0,0,1, 1,0,0), nrow=2, ncol=3, byrow=T)
   
-  klaR::triplot(label = c(expression(p[A[3]]), expression(p[A[1]]), expression(p[A[2]])), grid=F)
+  klaR::triplot(label = c(expression(pc), expression(pa), expression(pb)), grid=F)
   klaR::trilines(rpa, col="red")
   klaR::trilines(rpb, col="red")
   klaR::trilines(rpc, col="red")
@@ -51,18 +51,18 @@ simplex2d <- function(){
   # triplot(grid=F, frame=F)
   # legend(x = -0.5, y = 0.5, 
   # 	 legend = c(
-  #       expression(paste("1)   ", A[1], " ganha no 1º turno, ", A[2], " em 2º lugar")),
-  #       expression(paste("2)   ", A[1], " ganha no 1º turno, ", A[3], " em 2º lugar")),
-  #       expression(paste("3)   ", A[2], " ganha no 1º turno, ", A[1], " em 2º lugar")),
-  #       expression(paste("4)   ", A[2], " ganha no 1º turno, ", A[3], " em 2º lugar")),
-  #       expression(paste("5)   ", A[3], " ganha no 1º turno, ", A[1], " em 2º lugar")),
-  #       expression(paste("6)   ", A[3], " ganha no 1º turno, ", A[2], " em 2º lugar")),
-  #       expression(paste("7)   ", A[1], " e ", A[2], " no 2º turno, ", A[1], " na frente")) ,
-  #       expression(paste("8)   ", A[1], " e ", A[2], " no 2º turno, ", A[2], " na frente")) ,
-  #       expression(paste("9)   ", A[1], " e ", A[3], " no 2º turno, ", A[1], " na frente")) ,
-  #       expression(paste("10) ", A[1], " e ", A[3], " no 2º turno, ", A[3], " na frente")) ,
-  #       expression(paste("11) ", A[2], " e ", A[3], " no 2º turno, ", A[2], " na frente")) ,
-  #       expression(paste("12) ", A[2], " e ", A[3], " no 2º turno, ", A[3], " na frente"))  
+  #       expression(paste("1)   ", A, " ganha no 1º turno, ", B, " em 2º lugar")),
+  #       expression(paste("2)   ", A, " ganha no 1º turno, ", C, " em 2º lugar")),
+  #       expression(paste("3)   ", B, " ganha no 1º turno, ", A, " em 2º lugar")),
+  #       expression(paste("4)   ", B, " ganha no 1º turno, ", C, " em 2º lugar")),
+  #       expression(paste("5)   ", C, " ganha no 1º turno, ", A, " em 2º lugar")),
+  #       expression(paste("6)   ", C, " ganha no 1º turno, ", B, " em 2º lugar")),
+  #       expression(paste("7)   ", A, " e ", B, " no 2º turno, ", A, " na frente")) ,
+  #       expression(paste("8)   ", A, " e ", B, " no 2º turno, ", B, " na frente")) ,
+  #       expression(paste("9)   ", A, " e ", C, " no 2º turno, ", A, " na frente")) ,
+  #       expression(paste("10) ", A, " e ", C, " no 2º turno, ", C, " na frente")) ,
+  #       expression(paste("11) ", B, " e ", C, " no 2º turno, ", B, " na frente")) ,
+  #       expression(paste("12) ", B, " e ", C, " no 2º turno, ", C, " na frente"))  
   #              )
   #       )
 }
