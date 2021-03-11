@@ -11,7 +11,7 @@
 #' bayes(rep(1/5,5), 500)
 #' # Contando com não válidos (p.nv) e indecisos (p.und)
 #' # https://www.cnnbrasil.com.br/politica/2021/03/10/pesquisa-exclusiva-cnn-mostra-bolsonaro-em-1-dez-pontos-a-frente-de-lula
-#' bayes(p=c(.31,.21,.10,.09,.07,.04,.02,.01), n=1200, p.nv=0.12, 0.03)
+#' bayes(p=c(.31,.21,.10,.09,.07,.04,.02,.01), n=1200, p.nv=0.12, p.und=0.03)
 #' bayes(c(.43,.39), 1200, 0.15, 0.03)
 #' # A seguir estão cenários com empate técnico tríplice segundo os institutos de pesquisa.
 #' bayes(c(.5813972562, .3158114522, .1027912917), 50)
