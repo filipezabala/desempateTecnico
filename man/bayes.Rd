@@ -4,12 +4,16 @@
 \alias{bayes}
 \title{Probabilities in a brazilian electoral pool}
 \usage{
-bayes(p = vector(), n, M = 10^4)
+bayes(p = vector(), n, p.nv = 0, p.und = 0, M = 10^4)
 }
 \arguments{
 \item{\code{p}}{A vector containing the proportions of votes.}
 
 \item{\code{n}}{Sample size.}
+
+\item{\code{p.nv}}{A number containing the proportion of non valid votes to be excluded. Default: \code{0}.}
+
+\item{\code{p.und}}{A number containing the proportion of undecided votes to be proportionally distributed considering p and p.nv. Default: \code{0}.}
 
 \item{\code{M}}{Number of replications. Default: \code{10^4}.}
 }
@@ -20,6 +24,10 @@ Calculates posterior probabilities via Monte Carlo.
 bayes(c(.4,.3,.3), 1000)
 bayes(c(.3,.25,.2,.1,.05), 100)
 bayes(rep(1/5,5), 500)
+# Contando com não válidos (p.nv) e indecisos (p.und)
+# https://www.cnnbrasil.com.br/politica/2021/03/10/pesquisa-exclusiva-cnn-mostra-bolsonaro-em-1-dez-pontos-a-frente-de-lula
+bayes(p=c(.31,.21,.10,.09,.07,.04,.02,.01), n=1200, p.nv=0.12, 0.03)
+bayes(c(.43,.39), 1200, 0.15, 0.03)
 # A seguir estão cenários com empate técnico tríplice segundo os institutos de pesquisa.
 bayes(c(.5813972562, .3158114522, .1027912917), 50)
 bayes(c(.5144202347, .3246860305, .1608937348), 100)

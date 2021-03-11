@@ -14,7 +14,7 @@ library(devtools)
 session_info()
 
 # updating and creating manual
-devtools::document(setwd('~/Dropbox/ZNEstat/Pesquisas/Dissertacao/desempateTecnico/'))
+devtools::document(setwd('~/Dropbox/USP/Dissertacao/desempateTecnico/'))
 
 # loading
 devtools::load_all()
