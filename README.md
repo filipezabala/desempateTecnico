@@ -1,6 +1,6 @@
 # Desempate Técnico
 
-Arquivos e funções utilizadas na dissertação de Filipe Zabala (2009) - Desempate Técnico.
+Arquivos e funções utilizadas na dissertação de [Filipe Zabala (2009) - Desempate Técnico](https://doi.org/10.11606/D.45.2009.tde-01032021-140004).
 
 ## Instalação
 ```r
